@@ -1,0 +1,185 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Content blocks for the public homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero_badge_label": {
+      "type": "string",
+      "default": "AI-Powered Healthcare Center"
+    },
+    "hero_heading_lead": {
+      "type": "string",
+      "default": "Revolutionizing"
+    },
+    "hero_heading_highlight": {
+      "type": "string",
+      "default": "Healthcare in Kashmir"
+    },
+    "hero_heading_tail": {
+      "type": "string",
+      "default": "with AI Technology"
+    },
+    "hero_subtitle": {
+      "type": "text",
+      "default": "Experience the future of healthcare with our AI-powered voice assistant. Talk directly to our intelligent voice assistant on the website, get instant medical guidance, symptom analysis, and connect with top specialists across Kashmir - available 24/7 in Urdu and English."
+    },
+    "hero_primary_cta_label": {
+      "type": "string",
+      "default": "Call AI Health Assistant"
+    },
+    "hero_secondary_cta_label": {
+      "type": "string",
+      "default": "Try Voice Consultation"
+    },
+    "hero_stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.hero-stat"
+    },
+    "hero_testimonial_rating": {
+      "type": "string",
+      "default": "4.9/5"
+    },
+    "hero_testimonial_subtitle": {
+      "type": "string",
+      "default": "Trusted by"
+    },
+    "hero_testimonial_highlight": {
+      "type": "string",
+      "default": "5,000+ Kashmir residents"
+    },
+    "hero_testimonial_avatars": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "faq_badge": {
+      "type": "string",
+      "default": "FAQ"
+    },
+    "faq_heading": {
+      "type": "string",
+      "default": "Frequently Asked Questions"
+    },
+    "faq_description": {
+      "type": "text",
+      "default": "Get answers to common questions about our AI-powered healthcare platform and services."
+    },
+    "faq_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.faq-item"
+    },
+    "features_badge": {
+      "type": "string",
+      "default": "AI-Powered Healthcare"
+    },
+    "features_heading_primary": {
+      "type": "string",
+      "default": "Revolutionary Healthcare"
+    },
+    "features_heading_secondary": {
+      "type": "string",
+      "default": "for Kashmir Valley"
+    },
+    "features_description": {
+      "type": "text",
+      "default": "Experience the future of healthcare with our AI-powered voice assistant. Get instant medical guidance, connect with top specialists, and access world-class healthcare services across all districts of Kashmir - available 24/7 in your preferred language."
+    },
+    "features_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.feature-card"
+    },
+    "features_footer_heading": {
+      "type": "string",
+      "default": "Built for Kashmir. Powered by AI."
+    },
+    "features_footer_description": {
+      "type": "text",
+      "default": "jkhealthcare.org revolutionizes healthcare access in Kashmir with AI-powered voice technology. Every feature is designed to overcome geographical barriers, language challenges, and accessibility issues unique to the Kashmir Valley, ensuring quality healthcare reaches every resident, everywhere."
+    },
+    "pricing_badge_label": {
+      "type": "string",
+      "default": "Simple Pricing"
+    },
+    "pricing_heading_primary": {
+      "type": "string",
+      "default": "Choose your"
+    },
+    "pricing_heading_secondary": {
+      "type": "string",
+      "default": "AI healthcare plan"
+    },
+    "pricing_description": {
+      "type": "text",
+      "default": "Access AI-powered healthcare services designed for Kashmir. Get instant health guidance, connect with specialists, and book appointments - all through our intelligent voice assistant."
+    },
+    "pricing_plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.pricing-plan"
+    },
+    "cta_heading": {
+      "type": "string",
+      "default": "Ready to Transform Healthcare in Kashmir?"
+    },
+    "cta_description": {
+      "type": "text",
+      "default": "Join over 5,000 Kashmir residents who trust our AI-powered platform for smarter, faster, and more accessible healthcare solutions. Experience healthcare in your language, available 24/7 across all districts."
+    },
+    "cta_primary_label": {
+      "type": "string",
+      "default": "Call AI Health Assistant"
+    },
+    "cta_secondary_label": {
+      "type": "string",
+      "default": "Download App"
+    },
+    "cta_secondary_tooltip": {
+      "type": "string",
+      "default": "Coming soon"
+    },
+    "cta_secondary_message": {
+      "type": "text",
+      "default": "Download the jkhealthcare.org App to access on-the-go health monitoring, offline health records, emergency features with local contacts, Kashmir-specific health tips, and multi-language support. Coming soon to the Play Store and App Store!"
+    },
+    "ai_badge_label": {
+      "type": "string",
+      "default": "AI-Powered Healthcare for Kashmir"
+    },
+    "ai_heading_primary": {
+      "type": "string",
+      "default": "Intelligent Health"
+    },
+    "ai_heading_secondary": {
+      "type": "string",
+      "default": "Voice Assistant"
+    },
+    "ai_description": {
+      "type": "text",
+      "default": "Experience the future of healthcare with our advanced AI voice assistant designed specifically for Kashmir. Get instant medical guidance, symptom analysis, and personalized health recommendations through natural conversation in Urdu or English - available 24/7 across all districts of the valley."
+    },
+    "ai_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.ai-card"
+    },
+    "ai_voice_title": {
+      "type": "string",
+      "default": "Health Voice Assistant"
+    },
+    "ai_voice_description": {
+      "type": "text",
+      "default": "Speak naturally about your health concerns. Our AI understands symptoms, provides guidance, and connects you with the right healthcare professionals."
+    }
+  }
+}

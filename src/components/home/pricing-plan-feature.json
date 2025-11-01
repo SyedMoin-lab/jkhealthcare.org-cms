@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_home_pricing_plan_features",
+  "info": {
+    "displayName": "Pricing Plan Feature",
+    "description": "Individual feature bullet for pricing plan",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
+

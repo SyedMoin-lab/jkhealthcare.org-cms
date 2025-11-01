@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "partnerships_pages",
+  "info": {
+    "singularName": "partnerships-page",
+    "pluralName": "partnerships-pages",
+    "displayName": "Partnerships Page",
+    "description": "Content for the partnerships landing page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero_title": {
+      "type": "string",
+      "default": "Our Partnerships"
+    },
+    "hero_subtitle": {
+      "type": "text",
+      "default": "Trusted by healthcare providers across Kashmir Valley."
+    },
+    "hero_primary_cta_label": {
+      "type": "string",
+      "default": "Request a call back"
+    },
+    "hero_secondary_cta_label": {
+      "type": "string",
+      "default": "Get help as a patient"
+    },
+    "hero_stat_count": {
+      "type": "integer",
+      "default": 24
+    },
+    "hero_stat_label": {
+      "type": "string",
+      "default": "active partnerships"
+    },
+    "partners_heading": {
+      "type": "string",
+      "default": "Our partner network"
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partnerships.partner"
+    }
+  }
+}
+

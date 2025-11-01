@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_home_ai_statistics",
+  "info": {
+    "displayName": "AI Statistic",
+    "description": "Counter configuration for AI cards",
+    "icon": "hash"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "start": {
+      "type": "integer",
+      "default": 0
+    },
+    "end": {
+      "type": "integer",
+      "required": true
+    },
+    "suffix": {
+      "type": "string"
+    }
+  }
+}
+

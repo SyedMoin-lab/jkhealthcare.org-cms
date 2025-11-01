@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "patient_pages",
+  "info": {
+    "singularName": "patient-page",
+    "pluralName": "patient-pages",
+    "displayName": "Patient Page",
+    "description": "Content for the patient landing page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero_title": {
+      "type": "string",
+      "default": "India's First In-Hospital Concierge For You. And Your Family."
+    },
+    "hero_subtitle": {
+      "type": "string",
+      "default": "Available in Kashmir only"
+    },
+    "hero_primary_cta_label": {
+      "type": "string",
+      "default": "Request a call back"
+    },
+    "hero_secondary_cta_label": {
+      "type": "string",
+      "default": "Become a partner"
+    },
+    "stats_heading": {
+      "type": "string",
+      "default": "Total Patients Helped"
+    },
+    "stats_value": {
+      "type": "integer",
+      "default": 12876
+    },
+    "stats_caption": {
+      "type": "text",
+      "default": "and counting — thanks to our growing network of partners and clinicians."
+    },
+    "testimonials_heading": {
+      "type": "string",
+      "default": "What patients are saying"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "patients.testimonial"
+    }
+  }
+}
+
