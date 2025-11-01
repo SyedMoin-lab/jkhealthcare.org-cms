@@ -10,6 +10,131 @@
   "options": {
     "draftAndPublish": false
   },
+  "pluginOptions": {
+    "content-manager": {
+      "list": {
+        "layout": [
+          {
+            "name": "organization_name",
+            "key": "organization_name",
+            "metadatas": {
+              "label": "Organization",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "contact_name",
+            "key": "contact_name",
+            "metadatas": {
+              "label": "Contact",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "email",
+            "key": "email",
+            "metadatas": {
+              "label": "Email",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "phone_number",
+            "key": "phone_number",
+            "metadatas": {
+              "label": "Phone",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "location",
+            "key": "location",
+            "metadatas": {
+              "label": "Location",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "organization_type",
+            "key": "organization_type",
+            "metadatas": {
+              "label": "Organization type",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "services_provided",
+            "key": "services_provided",
+            "metadatas": {
+              "label": "Services provided",
+              "sortable": false,
+              "searchable": true
+            }
+          },
+          {
+            "name": "monthly_patient_volume",
+            "key": "monthly_patient_volume",
+            "metadatas": {
+              "label": "Monthly patient volume",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "website",
+            "key": "website",
+            "metadatas": {
+              "label": "Website",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "preferred_contact_time",
+            "key": "preferred_contact_time",
+            "metadatas": {
+              "label": "Preferred contact time",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "message",
+            "key": "message",
+            "metadatas": {
+              "label": "Message",
+              "sortable": false,
+              "searchable": true
+            }
+          },
+          {
+            "name": "source",
+            "key": "source",
+            "metadatas": {
+              "label": "Source",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "timestamp",
+            "key": "timestamp",
+            "metadatas": {
+              "label": "Timestamp",
+              "sortable": true,
+              "searchable": false
+            }
+          }
+        ]
+      }
+    }
+  },
   "attributes": {
     "organization_name": {
       "type": "string",
@@ -56,4 +181,3 @@
     }
   }
 }
-

@@ -442,6 +442,104 @@ export interface ApiContactRequestContactRequest
   options: {
     draftAndPublish: false;
   };
+  pluginOptions: {
+    'content-manager': {
+      list: {
+        layout: [
+          {
+            key: 'first_name';
+            metadatas: {
+              label: 'First name';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'first_name';
+          },
+          {
+            key: 'last_name';
+            metadatas: {
+              label: 'Last name';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'last_name';
+          },
+          {
+            key: 'phone_number';
+            metadatas: {
+              label: 'Phone';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'phone_number';
+          },
+          {
+            key: 'email';
+            metadatas: {
+              label: 'Email';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'email';
+          },
+          {
+            key: 'location';
+            metadatas: {
+              label: 'Location';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'location';
+          },
+          {
+            key: 'preferred_language';
+            metadatas: {
+              label: 'Preferred language';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'preferred_language';
+          },
+          {
+            key: 'preferred_call_time';
+            metadatas: {
+              label: 'Preferred call time';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'preferred_call_time';
+          },
+          {
+            key: 'message';
+            metadatas: {
+              label: 'Message';
+              searchable: true;
+              sortable: false;
+            };
+            name: 'message';
+          },
+          {
+            key: 'source';
+            metadatas: {
+              label: 'Source';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'source';
+          },
+          {
+            key: 'timestamp';
+            metadatas: {
+              label: 'Timestamp';
+              searchable: false;
+              sortable: true;
+            };
+            name: 'timestamp';
+          },
+        ];
+      };
+    };
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -584,6 +682,131 @@ export interface ApiPartnerRequestPartnerRequest
   options: {
     draftAndPublish: false;
   };
+  pluginOptions: {
+    'content-manager': {
+      list: {
+        layout: [
+          {
+            key: 'organization_name';
+            metadatas: {
+              label: 'Organization';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'organization_name';
+          },
+          {
+            key: 'contact_name';
+            metadatas: {
+              label: 'Contact';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'contact_name';
+          },
+          {
+            key: 'email';
+            metadatas: {
+              label: 'Email';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'email';
+          },
+          {
+            key: 'phone_number';
+            metadatas: {
+              label: 'Phone';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'phone_number';
+          },
+          {
+            key: 'location';
+            metadatas: {
+              label: 'Location';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'location';
+          },
+          {
+            key: 'organization_type';
+            metadatas: {
+              label: 'Organization type';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'organization_type';
+          },
+          {
+            key: 'services_provided';
+            metadatas: {
+              label: 'Services provided';
+              searchable: true;
+              sortable: false;
+            };
+            name: 'services_provided';
+          },
+          {
+            key: 'monthly_patient_volume';
+            metadatas: {
+              label: 'Monthly patient volume';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'monthly_patient_volume';
+          },
+          {
+            key: 'website';
+            metadatas: {
+              label: 'Website';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'website';
+          },
+          {
+            key: 'preferred_contact_time';
+            metadatas: {
+              label: 'Preferred contact time';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'preferred_contact_time';
+          },
+          {
+            key: 'message';
+            metadatas: {
+              label: 'Message';
+              searchable: true;
+              sortable: false;
+            };
+            name: 'message';
+          },
+          {
+            key: 'source';
+            metadatas: {
+              label: 'Source';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'source';
+          },
+          {
+            key: 'timestamp';
+            metadatas: {
+              label: 'Timestamp';
+              searchable: false;
+              sortable: true;
+            };
+            name: 'timestamp';
+          },
+        ];
+      };
+    };
+  };
   attributes: {
     contact_name: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
@@ -712,6 +935,140 @@ export interface ApiPatientRequestPatientRequest
   };
   options: {
     draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      list: {
+        layout: [
+          {
+            key: 'first_name';
+            metadatas: {
+              label: 'First name';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'first_name';
+          },
+          {
+            key: 'last_name';
+            metadatas: {
+              label: 'Last name';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'last_name';
+          },
+          {
+            key: 'phone_number';
+            metadatas: {
+              label: 'Phone';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'phone_number';
+          },
+          {
+            key: 'email';
+            metadatas: {
+              label: 'Email';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'email';
+          },
+          {
+            key: 'location';
+            metadatas: {
+              label: 'Location';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'location';
+          },
+          {
+            key: 'preferred_language';
+            metadatas: {
+              label: 'Preferred language';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'preferred_language';
+          },
+          {
+            key: 'preferred_contact_method';
+            metadatas: {
+              label: 'Preferred contact method';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'preferred_contact_method';
+          },
+          {
+            key: 'preferred_contact_time';
+            metadatas: {
+              label: 'Preferred contact time';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'preferred_contact_time';
+          },
+          {
+            key: 'reason_for_visit';
+            metadatas: {
+              label: 'Reason for visit';
+              searchable: true;
+              sortable: false;
+            };
+            name: 'reason_for_visit';
+          },
+          {
+            key: 'insurance_provider';
+            metadatas: {
+              label: 'Insurance provider';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'insurance_provider';
+          },
+          {
+            key: 'additional_notes';
+            metadatas: {
+              label: 'Additional notes';
+              searchable: true;
+              sortable: false;
+            };
+            name: 'additional_notes';
+          },
+          {
+            key: 'consent';
+            metadatas: {
+              label: 'Consent';
+              searchable: false;
+              sortable: true;
+            };
+            name: 'consent';
+          },
+          {
+            key: 'source';
+            metadatas: {
+              label: 'Source';
+              searchable: true;
+              sortable: true;
+            };
+            name: 'source';
+          },
+          {
+            key: 'timestamp';
+            metadatas: {
+              label: 'Timestamp';
+              searchable: false;
+              sortable: true;
+            };
+            name: 'timestamp';
+          },
+        ];
+      };
+    };
   };
   attributes: {
     additional_notes: Schema.Attribute.Text;

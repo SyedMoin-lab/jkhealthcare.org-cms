@@ -10,6 +10,140 @@
   "options": {
     "draftAndPublish": false
   },
+  "pluginOptions": {
+    "content-manager": {
+      "list": {
+        "layout": [
+          {
+            "name": "first_name",
+            "key": "first_name",
+            "metadatas": {
+              "label": "First name",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "last_name",
+            "key": "last_name",
+            "metadatas": {
+              "label": "Last name",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "phone_number",
+            "key": "phone_number",
+            "metadatas": {
+              "label": "Phone",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "email",
+            "key": "email",
+            "metadatas": {
+              "label": "Email",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "location",
+            "key": "location",
+            "metadatas": {
+              "label": "Location",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "preferred_language",
+            "key": "preferred_language",
+            "metadatas": {
+              "label": "Preferred language",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "preferred_contact_method",
+            "key": "preferred_contact_method",
+            "metadatas": {
+              "label": "Preferred contact method",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "preferred_contact_time",
+            "key": "preferred_contact_time",
+            "metadatas": {
+              "label": "Preferred contact time",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "reason_for_visit",
+            "key": "reason_for_visit",
+            "metadatas": {
+              "label": "Reason for visit",
+              "sortable": false,
+              "searchable": true
+            }
+          },
+          {
+            "name": "insurance_provider",
+            "key": "insurance_provider",
+            "metadatas": {
+              "label": "Insurance provider",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "additional_notes",
+            "key": "additional_notes",
+            "metadatas": {
+              "label": "Additional notes",
+              "sortable": false,
+              "searchable": true
+            }
+          },
+          {
+            "name": "consent",
+            "key": "consent",
+            "metadatas": {
+              "label": "Consent",
+              "sortable": true,
+              "searchable": false
+            }
+          },
+          {
+            "name": "source",
+            "key": "source",
+            "metadatas": {
+              "label": "Source",
+              "sortable": true,
+              "searchable": true
+            }
+          },
+          {
+            "name": "timestamp",
+            "key": "timestamp",
+            "metadatas": {
+              "label": "Timestamp",
+              "sortable": true,
+              "searchable": false
+            }
+          }
+        ]
+      }
+    }
+  },
   "attributes": {
     "first_name": {
       "type": "string",
@@ -58,4 +192,3 @@
     }
   }
 }
-
