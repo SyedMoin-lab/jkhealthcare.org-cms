@@ -430,6 +430,45 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactRequestContactRequest
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_requests';
+  info: {
+    description: 'Submissions from the AI health assistant landing form';
+    displayName: 'AI Contact Request';
+    pluralName: 'contact-requests';
+    singularName: 'contact-request';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    first_name: Schema.Attribute.String & Schema.Attribute.Required;
+    last_name: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-request.contact-request'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    message: Schema.Attribute.Text;
+    phone_number: Schema.Attribute.String & Schema.Attribute.Required;
+    preferred_call_time: Schema.Attribute.String;
+    preferred_language: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    source: Schema.Attribute.String;
+    timestamp: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   collectionName: 'home_pages';
   info: {
@@ -533,6 +572,48 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPartnerRequestPartnerRequest
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'partner_requests';
+  info: {
+    description: 'Submissions from the partnerships form';
+    displayName: 'Partner Request';
+    pluralName: 'partner-requests';
+    singularName: 'partner-request';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    contact_name: Schema.Attribute.String & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::partner-request.partner-request'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    message: Schema.Attribute.Text;
+    monthly_patient_volume: Schema.Attribute.String;
+    organization_name: Schema.Attribute.String & Schema.Attribute.Required;
+    organization_type: Schema.Attribute.String;
+    phone_number: Schema.Attribute.String & Schema.Attribute.Required;
+    preferred_contact_time: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    services_provided: Schema.Attribute.Text;
+    source: Schema.Attribute.String;
+    timestamp: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    website: Schema.Attribute.String;
+  };
+}
+
 export interface ApiPartnershipsPagePartnershipsPage
   extends Struct.SingleTypeSchema {
   collectionName: 'partnerships_pages';
@@ -614,6 +695,49 @@ export interface ApiPatientPagePatientPage extends Struct.SingleTypeSchema {
     testimonials: Schema.Attribute.Component<'patients.testimonial', true>;
     testimonials_heading: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'What patients are saying'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPatientRequestPatientRequest
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'patient_requests';
+  info: {
+    description: 'Submissions from the patient assistance form';
+    displayName: 'Patient Request';
+    pluralName: 'patient-requests';
+    singularName: 'patient-request';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    additional_notes: Schema.Attribute.Text;
+    consent: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    first_name: Schema.Attribute.String & Schema.Attribute.Required;
+    insurance_provider: Schema.Attribute.String;
+    last_name: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::patient-request.patient-request'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    phone_number: Schema.Attribute.String & Schema.Attribute.Required;
+    preferred_contact_method: Schema.Attribute.String;
+    preferred_contact_time: Schema.Attribute.String;
+    preferred_language: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    reason_for_visit: Schema.Attribute.Text;
+    source: Schema.Attribute.String;
+    timestamp: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1130,9 +1254,12 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::contact-request.contact-request': ApiContactRequestContactRequest;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::partner-request.partner-request': ApiPartnerRequestPartnerRequest;
       'api::partnerships-page.partnerships-page': ApiPartnershipsPagePartnershipsPage;
       'api::patient-page.patient-page': ApiPatientPagePatientPage;
+      'api::patient-request.patient-request': ApiPatientRequestPatientRequest;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

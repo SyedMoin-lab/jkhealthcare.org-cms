@@ -5,6 +5,7 @@
   (key: string, defaultValue: boolean): boolean;
   int: (key: string, defaultValue?: number) => number;
   bool: (key: string, defaultValue?: boolean) => boolean;
-  array: (key: string) => string[];
+  array: (key: string, defaultValue?: string[]) => string[];
 };
+
 

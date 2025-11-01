@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_requests",
+  "info": {
+    "singularName": "partner-request",
+    "pluralName": "partner-requests",
+    "displayName": "Partner Request",
+    "description": "Submissions from the partnerships form"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "organization_name": {
+      "type": "string",
+      "required": true
+    },
+    "contact_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "organization_type": {
+      "type": "string"
+    },
+    "services_provided": {
+      "type": "text"
+    },
+    "monthly_patient_volume": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "preferred_contact_time": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}
+

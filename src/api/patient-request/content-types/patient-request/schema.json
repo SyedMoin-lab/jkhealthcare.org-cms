@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patient_requests",
+  "info": {
+    "singularName": "patient-request",
+    "pluralName": "patient-requests",
+    "displayName": "Patient Request",
+    "description": "Submissions from the patient assistance form"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "location": {
+      "type": "string"
+    },
+    "preferred_contact_method": {
+      "type": "string"
+    },
+    "preferred_contact_time": {
+      "type": "string"
+    },
+    "reason_for_visit": {
+      "type": "text"
+    },
+    "insurance_provider": {
+      "type": "string"
+    },
+    "additional_notes": {
+      "type": "text"
+    },
+    "consent": {
+      "type": "boolean",
+      "default": false
+    },
+    "preferred_language": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}
+

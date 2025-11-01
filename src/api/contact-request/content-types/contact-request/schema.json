@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_requests",
+  "info": {
+    "singularName": "contact-request",
+    "pluralName": "contact-requests",
+    "displayName": "AI Contact Request",
+    "description": "Submissions from the AI health assistant landing form"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "location": {
+      "type": "string"
+    },
+    "preferred_language": {
+      "type": "string"
+    },
+    "preferred_call_time": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "source": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}
+
