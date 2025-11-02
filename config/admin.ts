@@ -1,4 +1,4 @@
-import type { EnvFn } from "./env";
+import type { EnvFn } from "../types/env";
 
 export default ({ env }: { env: EnvFn }) => ({
   auth: {

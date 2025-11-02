@@ -1,4 +1,4 @@
-﻿export type EnvFn = {
+export type EnvFn = {
   (key: string): string | undefined;
   (key: string, defaultValue: string): string;
   (key: string, defaultValue: number): number;
@@ -7,5 +7,3 @@
   bool: (key: string, defaultValue?: boolean) => boolean;
   array: (key: string, defaultValue?: string[]) => string[];
 };
-
-
