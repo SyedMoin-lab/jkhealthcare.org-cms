@@ -39,6 +39,38 @@
       "type": "string",
       "default": "Try Voice Consultation"
     },
+    "hero_offer_hospital": {
+      "type": "string",
+      "default": "Valley Care Hospital"
+    },
+    "hero_offer_phone": {
+      "type": "string",
+      "default": "+91 70000 00000"
+    },
+    "hero_offer_discount": {
+      "type": "string",
+      "default": "15% off diagnostics today"
+    },
+    "hero_offer_price": {
+      "type": "string",
+      "default": "INR 2,499 health check bundle"
+    },
+    "hero_offer_highlight_one_label": {
+      "type": "string",
+      "default": "Availability"
+    },
+    "hero_offer_highlight_one_value": {
+      "type": "string",
+      "default": "24/7 emergency desk"
+    },
+    "hero_offer_highlight_two_label": {
+      "type": "string",
+      "default": "Includes"
+    },
+    "hero_offer_highlight_two_value": {
+      "type": "string",
+      "default": "Doctor consult + lab reports"
+    },
     "hero_stats": {
       "type": "component",
       "repeatable": true,
