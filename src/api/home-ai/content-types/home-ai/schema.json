@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_ai_sections",
+  "info": {
+    "singularName": "home-ai",
+    "pluralName": "home-ais",
+    "displayName": "Home AI",
+    "description": "AI-powered healthcare section for the homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ai_badge_label": {
+      "type": "string",
+      "default": "AI-Powered Healthcare for Kashmir"
+    },
+    "ai_heading_primary": {
+      "type": "string",
+      "default": "Intelligent Health"
+    },
+    "ai_heading_secondary": {
+      "type": "string",
+      "default": "Voice Assistant"
+    },
+    "ai_description": {
+      "type": "text",
+      "default": "Experience the future of healthcare with our advanced AI voice assistant designed specifically for Kashmir. Get instant medical guidance, symptom analysis, and personalized health recommendations through natural conversation in Urdu or English - available 24/7 across all districts of the valley."
+    },
+    "ai_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.ai-card"
+    },
+    "ai_voice_title": {
+      "type": "string",
+      "default": "Health Voice Assistant"
+    },
+    "ai_voice_description": {
+      "type": "text",
+      "default": "Speak naturally about your health concerns. Our AI understands symptoms, provides guidance, and connects you with the right healthcare professionals."
+    }
+  }
+}

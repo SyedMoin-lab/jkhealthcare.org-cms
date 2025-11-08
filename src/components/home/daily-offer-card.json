@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_home_daily_offer_cards",
+  "info": {
+    "displayName": "Daily Offer Card",
+    "description": "Hero carousel cards for hospitals, labs, diagnostics"
+  },
+  "options": {},
+  "attributes": {
+    "badge_label": {
+      "type": "string"
+    },
+    "category_label": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "offer_text": {
+      "type": "text"
+    },
+    "package_text": {
+      "type": "text"
+    },
+    "services": {
+      "type": "text"
+    },
+    "accent_color": {
+      "type": "string"
+    }
+  }
+}

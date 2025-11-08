@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_patients_testimonials",
+  "info": {
+    "displayName": "Testimonial",
+    "description": "Patient testimonial entry used on the patients page",
+    "icon": "messageSquare"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    }
+  }
+}
+

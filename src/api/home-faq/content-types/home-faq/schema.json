@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_faq_sections",
+  "info": {
+    "singularName": "home-faq",
+    "pluralName": "home-faqs",
+    "displayName": "Home FAQ",
+    "description": "Frequently asked questions section for the homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "faq_badge": {
+      "type": "string",
+      "default": "FAQ"
+    },
+    "faq_heading": {
+      "type": "string",
+      "default": "Frequently Asked Questions"
+    },
+    "faq_description": {
+      "type": "text",
+      "default": "Get answers to common questions about our AI-powered healthcare platform and services."
+    },
+    "faq_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.faq-item"
+    }
+  }
+}

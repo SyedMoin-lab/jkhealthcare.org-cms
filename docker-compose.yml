@@ -1,0 +1,12 @@
+version: "3"
+services:
+  strapi:
+    build: .
+    container_name: strapi_app
+    ports:
+      - "1337:1337"
+    env_file: .env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run develop

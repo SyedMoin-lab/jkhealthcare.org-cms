@@ -1,0 +1,67 @@
+{
+  "collectionName": "components_home_ai_cards",
+  "info": {
+    "displayName": "AI Card",
+    "description": "Card item for the AI powered healthcare section",
+    "icon": "columns"
+  },
+  "options": {},
+  "attributes": {
+    "identifier": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "feature": {
+      "type": "enumeration",
+      "enum": ["spotlight", "counter", "timeline", "icons", "typing", "metrics", "none"],
+      "default": "none"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": ["sm", "md", "lg"],
+      "default": "md"
+    },
+    "class_name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "show_icons": {
+      "type": "boolean",
+      "default": false
+    },
+    "spotlight_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.ai-text-item"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.ai-timeline-entry"
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.ai-metric"
+    },
+    "statistic": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.ai-statistic"
+    },
+    "typing_text": {
+      "type": "text"
+    }
+  }
+}
+

@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctor_profiles",
+  "info": {
+    "singularName": "doctor-profile",
+    "pluralName": "doctor-profiles",
+    "displayName": "Doctor Profile",
+    "description": "Directory entry for recommended doctors"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "degrees": {
+      "type": "text"
+    },
+    "license_number": {
+      "type": "string"
+    },
+    "years_experience": {
+      "type": "integer"
+    },
+    "patients_treated": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "location": {
+      "type": "string"
+    },
+    "awards": {
+      "type": "text"
+    },
+    "specialization": {
+      "type": "string"
+    },
+    "super_specialization": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "book_url": {
+      "type": "string"
+    }
+  }
+}

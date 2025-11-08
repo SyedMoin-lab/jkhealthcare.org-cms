@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_cta_sections",
+  "info": {
+    "singularName": "home-cta",
+    "pluralName": "home-ctas",
+    "displayName": "Home CTA",
+    "description": "Call-to-action section for the homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cta_heading": {
+      "type": "string",
+      "default": "Ready to Transform Healthcare in Kashmir?"
+    },
+    "cta_description": {
+      "type": "text",
+      "default": "Join over 5,000 Kashmir residents who trust our AI-powered platform for smarter, faster, and more accessible healthcare solutions. Experience healthcare in your language, available 24/7 across all districts."
+    },
+    "cta_primary_label": {
+      "type": "string",
+      "default": "Call AI Health Assistant"
+    },
+    "cta_secondary_label": {
+      "type": "string",
+      "default": "Download App"
+    },
+    "cta_secondary_tooltip": {
+      "type": "string",
+      "default": "Coming soon"
+    },
+    "cta_secondary_message": {
+      "type": "text",
+      "default": "Download the jkhealthcare.org App to access on-the-go health monitoring, offline health records, emergency features with local contacts, Kashmir-specific health tips, and multi-language support. Coming soon to the Play Store and App Store!"
+    }
+  }
+}

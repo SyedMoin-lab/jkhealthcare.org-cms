@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_feature_sections",
+  "info": {
+    "singularName": "home-features",
+    "pluralName": "home-feature-sections",
+    "displayName": "Home Features",
+    "description": "Feature highlights section for the homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "features_badge": {
+      "type": "string",
+      "default": "AI-Powered Healthcare"
+    },
+    "features_heading_primary": {
+      "type": "string",
+      "default": "Revolutionary Healthcare"
+    },
+    "features_heading_secondary": {
+      "type": "string",
+      "default": "for Kashmir Valley"
+    },
+    "features_description": {
+      "type": "text",
+      "default": "Experience the future of healthcare with our AI-powered voice assistant. Get instant medical guidance, connect with top specialists, and access world-class healthcare services across all districts of Kashmir - available 24/7 in your preferred language."
+    },
+    "features_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.feature-card"
+    },
+    "features_footer_heading": {
+      "type": "string",
+      "default": "Built for Kashmir. Powered by AI."
+    },
+    "features_footer_description": {
+      "type": "text",
+      "default": "jkhealthcare.org revolutionizes healthcare access in Kashmir with AI-powered voice technology. Every feature is designed to overcome geographical barriers, language challenges, and accessibility issues unique to the Kashmir Valley, ensuring quality healthcare reaches every resident, everywhere."
+    }
+  }
+}

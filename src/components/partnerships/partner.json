@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_partnerships_partners",
+  "info": {
+    "displayName": "Partner",
+    "description": "Partner entry for the partnerships page",
+    "icon": "handshake"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    }
+  }
+}
+

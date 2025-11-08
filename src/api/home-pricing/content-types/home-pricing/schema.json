@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pricing_sections",
+  "info": {
+    "singularName": "home-pricing",
+    "pluralName": "home-pricing-sections",
+    "displayName": "Home Pricing",
+    "description": "Pricing plans section for the homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pricing_badge_label": {
+      "type": "string",
+      "default": "Simple Pricing"
+    },
+    "pricing_heading_primary": {
+      "type": "string",
+      "default": "Choose your"
+    },
+    "pricing_heading_secondary": {
+      "type": "string",
+      "default": "AI healthcare plan"
+    },
+    "pricing_description": {
+      "type": "text",
+      "default": "Access AI-powered healthcare services designed for Kashmir. Get instant health guidance, connect with specialists, and book appointments - all through our intelligent voice assistant."
+    },
+    "pricing_plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.pricing-plan"
+    }
+  }
+}

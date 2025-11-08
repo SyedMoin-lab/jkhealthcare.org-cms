@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_home_pricing_plans",
+  "info": {
+    "displayName": "Pricing Plan",
+    "description": "Pricing plan with features and CTA",
+    "icon": "coins"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price_display": {
+      "type": "string",
+      "required": true
+    },
+    "billing_period": {
+      "type": "string",
+      "default": "/month"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "button_label": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "button_variant": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "outline"],
+      "default": "primary"
+    },
+    "badge_label": {
+      "type": "string"
+    },
+    "is_popular": {
+      "type": "boolean",
+      "default": false
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.pricing-plan-feature"
+    }
+  }
+}
+
