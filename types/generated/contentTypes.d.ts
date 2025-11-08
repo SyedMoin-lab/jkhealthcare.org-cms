@@ -835,6 +835,125 @@ export interface ApiHomeHeroHomeHero extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
+  collectionName: 'home_pages';
+  info: {
+    description: 'Content blocks for the public homepage';
+    displayName: 'Home Page';
+    pluralName: 'home-pages';
+    singularName: 'home-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    ai_badge_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'AI-Powered Healthcare for Kashmir'>;
+    ai_cards: Schema.Attribute.Component<'home.ai-card', true>;
+    ai_description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Experience the future of healthcare with our advanced AI voice assistant designed specifically for Kashmir. Get instant medical guidance, symptom analysis, and personalized health recommendations through natural conversation in Urdu or English - available 24/7 across all districts of the valley.'>;
+    ai_heading_primary: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Intelligent Health'>;
+    ai_heading_secondary: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Voice Assistant'>;
+    ai_voice_description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Speak naturally about your health concerns. Our AI understands symptoms, provides guidance, and connects you with the right healthcare professionals.'>;
+    ai_voice_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Health Voice Assistant'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta_description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Join over 5,000 Kashmir residents who trust our AI-powered platform for smarter, faster, and more accessible healthcare solutions. Experience healthcare in your language, available 24/7 across all districts.'>;
+    cta_heading: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Ready to Transform Healthcare in Kashmir?'>;
+    cta_primary_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Call AI Health Assistant'>;
+    cta_secondary_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Download App'>;
+    cta_secondary_message: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Download the jkhealthcare.org App to access on-the-go health monitoring, offline health records, emergency features with local contacts, Kashmir-specific health tips, and multi-language support. Coming soon to the Play Store and App Store!'>;
+    cta_secondary_tooltip: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Coming soon'>;
+    faq_badge: Schema.Attribute.String & Schema.Attribute.DefaultTo<'FAQ'>;
+    faq_description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Get answers to common questions about our AI-powered healthcare platform and services.'>;
+    faq_heading: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Frequently Asked Questions'>;
+    faq_items: Schema.Attribute.Component<'home.faq-item', true>;
+    features_badge: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'AI-Powered Healthcare'>;
+    features_cards: Schema.Attribute.Component<'home.feature-card', true>;
+    features_description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Experience the future of healthcare with our AI-powered voice assistant. Get instant medical guidance, connect with top specialists, and access world-class healthcare services across all districts of Kashmir - available 24/7 in your preferred language.'>;
+    features_footer_description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'jkhealthcare.org revolutionizes healthcare access in Kashmir with AI-powered voice technology. Every feature is designed to overcome geographical barriers, language challenges, and accessibility issues unique to the Kashmir Valley, ensuring quality healthcare reaches every resident, everywhere.'>;
+    features_footer_heading: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Built for Kashmir. Powered by AI.'>;
+    features_heading_primary: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Revolutionary Healthcare'>;
+    features_heading_secondary: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'for Kashmir Valley'>;
+    hero_badge_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'AI-Powered Healthcare Center'>;
+    hero_heading_highlight: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Healthcare in Kashmir'>;
+    hero_heading_lead: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Revolutionizing'>;
+    hero_heading_tail: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'with AI Technology'>;
+    hero_offer_discount: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'15% off diagnostics today'>;
+    hero_offer_highlight_one_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Availability'>;
+    hero_offer_highlight_one_value: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'24/7 emergency desk'>;
+    hero_offer_highlight_two_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Includes'>;
+    hero_offer_highlight_two_value: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Doctor consult + lab reports'>;
+    hero_offer_hospital: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Valley Care Hospital'>;
+    hero_offer_phone: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'+91 70000 00000'>;
+    hero_offer_price: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'INR 2,499 health check bundle'>;
+    hero_primary_cta_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Call AI Health Assistant'>;
+    hero_secondary_cta_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Try Voice Consultation'>;
+    hero_stats: Schema.Attribute.Component<'home.hero-stat', true>;
+    hero_subtitle: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Experience the future of healthcare with our AI-powered voice assistant. Talk directly to our intelligent voice assistant on the website, get instant medical guidance, symptom analysis, and connect with top specialists across Kashmir - available 24/7 in Urdu and English.'>;
+    hero_testimonial_avatars: Schema.Attribute.Media<'images', true>;
+    hero_testimonial_highlight: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'5,000+ Kashmir residents'>;
+    hero_testimonial_rating: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'4.9/5'>;
+    hero_testimonial_subtitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Trusted by'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page.home-page'
+    > &
+      Schema.Attribute.Private;
+    pricing_badge_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Simple Pricing'>;
+    pricing_description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Access AI-powered healthcare services designed for Kashmir. Get instant health guidance, connect with specialists, and book appointments - all through our intelligent voice assistant.'>;
+    pricing_heading_primary: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Choose your'>;
+    pricing_heading_secondary: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'AI healthcare plan'>;
+    pricing_plans: Schema.Attribute.Component<'home.pricing-plan', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomePricingHomePricing extends Struct.SingleTypeSchema {
   collectionName: 'home_pricing_sections';
   info: {
@@ -1820,6 +1939,7 @@ declare module '@strapi/strapi' {
       'api::home-faq.home-faq': ApiHomeFaqHomeFaq;
       'api::home-features.home-features': ApiHomeFeaturesHomeFeatures;
       'api::home-hero.home-hero': ApiHomeHeroHomeHero;
+      'api::home-page.home-page': ApiHomePageHomePage;
       'api::home-pricing.home-pricing': ApiHomePricingHomePricing;
       'api::partner-request.partner-request': ApiPartnerRequestPartnerRequest;
       'api::partnerships-page.partnerships-page': ApiPartnershipsPagePartnershipsPage;
